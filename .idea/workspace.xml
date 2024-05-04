@@ -4,15 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db2d5a25-1c63-41b1-8d58-e3ff1d4d7236" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Client/OrderClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Configuration/OrderConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Main.java" afterDir="false" />
+    <list default="true" id="db2d5a25-1c63-41b1-8d58-e3ff1d4d7236" name="Changes" comment="Created Consuming side of SOAP Service">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrdersFop.xsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrdersFopOld.xsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Client/DispatchClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Client/DriverClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Servlet/TomcatServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Transform/PdfTransform.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/taxipic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Client/OrderClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Client/OrderClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +35,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2fBSW1mOZ4qZ7NVXFZCE8K86FVW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -40,16 +46,21 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Maven.soap-consuming [com.sun.xml.ws:jaxws-maven-plugin:3.0.0:wsgen].executor": "Run",
+    "Maven.soap-consuming [com.sun.xml.ws:jaxws-maven-plugin:3.0.0:wsimport-test].executor": "Run",
     "Maven.soap-consuming [com.sun.xml.ws:jaxws-maven-plugin:3.0.0:wsimport].executor": "Run",
+    "Maven.soap-consuming [jaxws:wsimport].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.Main.executor": "Run",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.Main.executor": "Debug",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Dell/Desktop/soap-consuming",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -58,10 +69,55 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "com.github.copilot.settings.ApplicationConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dell\Desktop\soap-consuming" />
+      <recent name="C:\Users\Dell\Desktop\soap-consuming\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dell\Desktop\soap-consuming" />
+      <recent name="C:\Users\Dell\Desktop\soap-consuming\src\main\resources\pdf" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="lt.viko.eif.m.trojanovskis.taksi.Client" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Main">
+    <configuration name="soap-consuming [jaxws:wsimport]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="jaxws:wsimport" />
+                <option value="-verbose" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="soap-consuming" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="lt.viko.eif.m.trojanovskis.taksi.Main" />
@@ -69,6 +125,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Maven.soap-consuming [jaxws:wsimport]" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -85,11 +146,129 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713273006880</updated>
-      <workItem from="1713273007864" duration="2803000" />
+      <workItem from="1713273007864" duration="4985000" />
+      <workItem from="1713964697346" duration="3465000" />
+      <workItem from="1713991638111" duration="215000" />
+      <workItem from="1713992181845" duration="2299000" />
+      <workItem from="1714257078961" duration="10997000" />
+      <workItem from="1714343761748" duration="418000" />
+      <workItem from="1714389251825" duration="10126000" />
+      <workItem from="1714650222706" duration="28580000" />
     </task>
+    <task id="LOCAL-00001" summary="Created Consuming side of SOAP Service">
+      <option name="closed" value="true" />
+      <created>1713276197404</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713276197404</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="neworigin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Created Consuming side of SOAP Service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Consuming side of SOAP Service" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Client/DriverClient.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Client/DriverClient.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Client/DispatchClient.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Servlet/TomcatServlet.java</url>
+          <line>253</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Servlet/TomcatServlet.java</url>
+          <line>260</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Servlet/TomcatServlet.java</url>
+          <line>261</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Servlet/TomcatServlet.java</url>
+          <line>255</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Servlet/TomcatServlet.java</url>
+          <line>254</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Servlet/TomcatServlet.java</url>
+          <line>257</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Servlet/TomcatServlet.java</url>
+          <line>256</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Servlet/TomcatServlet.java</url>
+          <line>258</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lt/viko/eif/m/trojanovskis/taksi/Servlet/TomcatServlet.java</url>
+          <line>259</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="java.io.FileOutputStream" memberName="fd" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
