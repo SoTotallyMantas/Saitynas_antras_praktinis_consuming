@@ -8,10 +8,18 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import lt.viko.eif.m.trojanovskis.taksi.Transform.PdfTransform;
 import java.io.*;
-
+/**
+ * Represents TomcatServlet Object
+ * This class is designated to serve PDF files
+ * and HTML pages
+ */
 @WebServlet(name="TomcatServlet",urlPatterns = {"/pdf/*"})
 public class TomcatServlet extends HttpServlet {
-
+    /**
+     * Method that serves PDF file
+     * @param response HttpServletResponse object
+     * @throws IOException
+     */
     private void servePdfFile(HttpServletResponse response) throws IOException {
         File file = new File("src/main/resources/Orders1.pdf"); // Replace with the actual path to the file
         if (!file.exists()) {
@@ -36,7 +44,11 @@ public class TomcatServlet extends HttpServlet {
             }
         }
     }
-
+    /**
+     * Method that serves HTML page for Client Order
+     * @param response HttpServletResponse object
+     * @throws IOException
+     */
     protected void ServeHTMLDispatchNumberClient(HttpServletResponse response) throws IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
@@ -65,6 +77,11 @@ public class TomcatServlet extends HttpServlet {
         out.println("</html>");
     }
 
+    /**
+     *  Method that serves HTML page for Dispatch Order
+     * @param response HttpServletResponse object
+     * @throws IOException
+     */
     protected void ServeHTMLDispatchClient(HttpServletResponse response) throws IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
@@ -95,6 +112,11 @@ public class TomcatServlet extends HttpServlet {
         out.println("</html>");
     }
 
+    /**
+     *  Method that serves HTML page for Driver License plate Order
+     * @param response HttpServletResponse object
+     * @throws IOException
+     */
     protected void ServeHTMLDriverLicenseClient(HttpServletResponse response) throws IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
@@ -123,6 +145,11 @@ public class TomcatServlet extends HttpServlet {
         out.println("</html>");
     }
 
+    /**
+     *  Method that serves HTML page for Driver Order
+     * @param response HttpServletResponse object
+     * @throws IOException
+     */
     protected void ServeHTMLDriverClient(HttpServletResponse response) throws IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
@@ -152,7 +179,11 @@ public class TomcatServlet extends HttpServlet {
         out.println("</body>");
         out.println("</html>");
     }
-
+    /**
+     *  Method that serves HTML page for Client Order
+     * @param response HttpServletResponse object
+     * @throws IOException
+     */
     protected void ServeHTMLOrderClient(HttpServletResponse response) throws IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
@@ -182,7 +213,13 @@ public class TomcatServlet extends HttpServlet {
         out.println("</body>");
         out.println("</html>");
     }
-
+    /**
+     * Method that handles POST requests
+     * @param request HttpServletRequest object
+     * @param response HttpServletResponse object
+     * @throws ServletException
+     * @throws IOException
+     */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         if (request.getRequestURI().endsWith("GetCientOrdersRequest")) {
@@ -269,7 +306,13 @@ public class TomcatServlet extends HttpServlet {
 
 
     }
-
+    /**
+     * Method that handles GET requests
+     * @param request HttpServletRequest object
+     * @param response HttpServletResponse object
+     * @throws ServletException
+     * @throws IOException
+     */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         if (request.getRequestURI().endsWith("Orders1.pdf")) {

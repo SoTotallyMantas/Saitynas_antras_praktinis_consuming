@@ -13,11 +13,22 @@ import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 import org.springframework.ws.client.core.support.WebServiceGatewaySupport;
 import org.springframework.ws.soap.client.core.SoapActionCallback;
 
-
+/**
+ * Represents OrderClient Object that extends WebServiceGatewaySupport
+ * This class is designated to communicate with Order WebService
+ */
 public class OrderClient extends WebServiceGatewaySupport {
-
+    /**
+     * Logger object that logs all the information
+     */
     private static final Logger log = LoggerFactory.getLogger(OrderClient.class);
 
+    /**
+     * Method that gets the order by first name and last name of client
+     * @param FirstName FirstName of the order corresponding to client
+     * @param LastName LastName of the order corresponding to client
+     * @return GetClientOrdersResponse object
+     */
     public GetClientOrdersResponse getOrder(String FirstName, String LastName) {
 
         GetClientOrdersRequest request = new GetClientOrdersRequest();

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fo:root language="EN" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:gen="http://lt.viko.eif/mantas/springsoap/gen">
+    <fo:layout-master-set>
+        <fo:simple-page-master master-name="A4-portrail" page-height="297mm" page-width="210mm" margin-top="5mm" margin-bottom="5mm" margin-left="5mm" margin-right="5mm">
+            <fo:region-body margin-top="25mm" margin-bottom="20mm"/>
+            <fo:region-before region-name="xsl-region-before" extent="25mm" display-align="before" precedence="true"/>
+        </fo:simple-page-master>
+    </fo:layout-master-set>
+    <fo:page-sequence master-reference="A4-portrail">
+        <fo:flow flow-name="xsl-region-body" border-collapse="collapse" reference-orientation="0">
+            <fo:block>
+                <fo:block font-size="14pt" font-family="Arial, sans-serif" space-after="5mm">
+                    <fo:block font-weight="bold" text-align="center" color="blue">Order</fo:block>
+                    <fo:block font-weight="bold" text-align="center">Order ID: 41</fo:block>
+                    <fo:block font-weight="bold" text-align="center">Address: Seliu g 50</fo:block>
+                </fo:block>
+                <fo:block font-weight="bold" margin-top="10pt" font-size="12pt">
+                    <fo:block font-weight="bold" text-align="center" color="green">Client Details</fo:block>
+                </fo:block>
+                <fo:block font-weight="bold" text-align="center">Client Name: Marius  Jonaitis</fo:block>
+                <fo:block font-weight="bold" text-align="center">Client Phone Number: +37098765432</fo:block>
+                <fo:block font-weight="bold" margin-top="10pt" font-size="12pt">
+                    <fo:block font-weight="bold" text-align="center" color="green">Driver Details</fo:block>
+                </fo:block>
+                <fo:block font-weight="bold" text-align="center">Driver Name: Vytautas  Vasiliauskas</fo:block>
+                <fo:block font-weight="bold" text-align="center">Driver Phone Number: +37087654322</fo:block>
+                <fo:block font-weight="bold" text-align="center">Driver License Plate: T5421</fo:block>
+                <fo:block font-weight="bold" margin-top="10pt" font-size="12pt">
+                    <fo:block font-weight="bold" text-align="center" color="green">Dispatch Details</fo:block>
+                </fo:block>
+                <fo:block font-weight="bold" text-align="center">Dispatch Name: Andrius  Kavaliauskas</fo:block>
+                <fo:block font-weight="bold" text-align="center">Dispatch Phone Number: +37087654322</fo:block>
+                <fo:block font-weight="bold" text-align="center">Dispatch Work Number: +37087654321</fo:block>
+                <fo:block font-size="14pt" font-family="Arial, sans-serif" space-after="5mm">
+                    <fo:block font-weight="bold" text-align="center" color="blue">Order</fo:block>
+                    <fo:block font-weight="bold" text-align="center">Order ID: 69</fo:block>
+                    <fo:block font-weight="bold" text-align="center">Address: Seliu g 50</fo:block>
+                </fo:block>
+                <fo:block font-weight="bold" margin-top="10pt" font-size="12pt">
+                    <fo:block font-weight="bold" text-align="center" color="green">Client Details</fo:block>
+                </fo:block>
+                <fo:block font-weight="bold" text-align="center">Client Name: Vytautas  Lapinaitis</fo:block>
+                <fo:block font-weight="bold" text-align="center">Client Phone Number: +37012345680</fo:block>
+                <fo:block font-weight="bold" margin-top="10pt" font-size="12pt">
+                    <fo:block font-weight="bold" text-align="center" color="green">Driver Details</fo:block>
+                </fo:block>
+                <fo:block font-weight="bold" text-align="center">Driver Name: Dovydas  Burokas</fo:block>
+                <fo:block font-weight="bold" text-align="center">Driver Phone Number: +37012345680</fo:block>
+                <fo:block font-weight="bold" text-align="center">Driver License Plate: T5421</fo:block>
+                <fo:block font-weight="bold" margin-top="10pt" font-size="12pt">
+                    <fo:block font-weight="bold" text-align="center" color="green">Dispatch Details</fo:block>
+                </fo:block>
+                <fo:block font-weight="bold" text-align="center">Dispatch Name: Andrius  Kavaliauskas</fo:block>
+                <fo:block font-weight="bold" text-align="center">Dispatch Phone Number: +37012345678</fo:block>
+                <fo:block font-weight="bold" text-align="center">Dispatch Work Number: +37087654321</fo:block>
+            </fo:block>
+            <fo:block>
+
+        </fo:flow>
+    </fo:page-sequence>
+</fo:root>

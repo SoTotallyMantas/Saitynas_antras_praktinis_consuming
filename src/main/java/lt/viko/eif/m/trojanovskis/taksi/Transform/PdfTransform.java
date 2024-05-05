@@ -21,9 +21,15 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.nio.file.Files;
-
+/**
+ * Represents PdfTransform Object
+ * This class is designated to convert XML to PDF
+ */
 public class PdfTransform {
-
+    /**
+     *  Method that check if PDF file is deleted
+     * @param file PDF file
+     */
     private static void checkIfExitsDelete(File file) {
         try {
             // Check if the file exists and delete it if it does
@@ -35,7 +41,12 @@ public class PdfTransform {
         }
     }
 
-
+    /**
+     *   Method that converts XML file to PDF
+     *
+     * @throws IOException
+     * @throws JAXBException
+     */
     public static void convertToPDF() throws IOException, JAXBException {
         File xsltFile = new File("OrdersFop.xsl");
         StreamSource xmlSource = new StreamSource(new File("Orders.xml"));
@@ -72,6 +83,14 @@ public class PdfTransform {
             }
         }
     }
+    /**
+     * Method that converts response to XML
+     * @param response response object
+     * @param filePath file path
+     * @param <T> generic type
+     * @throws JAXBException
+     * @throws IOException
+     */
     private static <T> void convertResponseToXml(T response, String filePath) throws JAXBException, IOException {
         JAXBContext jaxbContext = JAXBContext.newInstance(response.getClass());
         Marshaller marshaller = jaxbContext.createMarshaller();
@@ -85,6 +104,13 @@ public class PdfTransform {
             marshaller.marshal(response, fileWriter);
         }
     }
+    /**
+     * Method that converts GetClient response to XML
+     * @param firstname first name
+     * @param lastname last name
+     * @throws IOException
+     * @throws JAXBException
+     */
     public static void ConvertGetClient(String firstname , String lastname) throws IOException, JAXBException {
         OrderClient orderClient = new OrderClient();
         GetClientOrdersResponse response = orderClient.getOrder(firstname,lastname);
@@ -93,6 +119,12 @@ public class PdfTransform {
         convertToPDF();
 
     }
+    /**
+     * Method that converts GetDriverLicense response to XML
+     * @param licensePlate license plate
+     * @throws JAXBException
+     * @throws IOException
+     */
 
     public static void ConvertGetDriverLicense(String licensePlate) throws JAXBException, IOException {
 
@@ -104,7 +136,13 @@ public class PdfTransform {
 
 
     }
-
+    /**
+     * Method that converts GetDriver response to XML
+     * @param firstName first name
+     * @param lastName last name
+     * @throws JAXBException
+     * @throws IOException
+     */
     public static void ConvertGetDriver(String firstName, String lastName) throws JAXBException, IOException {
         DriverClient driverClient = new DriverClient();
         GetDriverOrdersResponse response = driverClient.getOrder(firstName,lastName);
@@ -112,14 +150,25 @@ public class PdfTransform {
 
         convertToPDF();
     }
-
+    /**
+     * Method that converts GetDispatchNumber response to XML
+     * @param workNumber work number
+     * @throws JAXBException
+     * @throws IOException
+     */
     public static void ConvertGetDispatchNumber(String workNumber) throws JAXBException, IOException {
         DispatchClient dispatchClient = new DispatchClient();
         GetDispatchNumberOrdersResponse response = dispatchClient.getNumberOrder(workNumber);
         convertResponseToXml(response,"Orders.xml");
         convertToPDF();
     }
-
+    /**
+     * Method that converts GetDispatch response to XML
+     * @param firstName first name
+     * @param lastName last name
+     * @throws JAXBException
+     * @throws IOException
+     */
     public static void ConvertGetDispatch(String firstName, String lastName) throws JAXBException, IOException {
         DispatchClient dispatchClient = new DispatchClient();
         GetDispatchOrdersResponse response = dispatchClient.getOrder(firstName,lastName);

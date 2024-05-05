@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<getDriverPlateOrdersResponse xmlns="http://lt.viko.eif/mantas/springsoap/gen">
+    <OrderList>
+        <Order id="1">
+            <address>Rygos g 5</address>
+            <client>
+                <id>2</id>
+                <FirstName>Tomas</FirstName>
+                <Lastname>Kavaliauskas</Lastname>
+                <Phone_Number>+37098765432</Phone_Number>
+            </client>
+            <driver>
+                <id>4</id>
+                <FirstName>Andrius</FirstName>
+                <Lastname>Simkus</Lastname>
+                <Phone_Number>+37087654321</Phone_Number>
+                <License_Plate>T3236</License_Plate>
+            </driver>
+            <dispatch>
+                <id>3</id>
+                <FirstName>Jonas</FirstName>
+                <Lastname>Jonaitis</Lastname>
+                <Phone_Number>+37098765431</Phone_Number>
+                <Work_Number>+37012345678</Work_Number>
+            </dispatch>
+        </Order>
+        <Order id="5">
+            <address>Seliu g 50</address>
+            <client>
+                <id>6</id>
+                <FirstName>Vytautas</FirstName>
+                <Lastname>Jonaitis</Lastname>
+                <Phone_Number>+37087654322</Phone_Number>
+            </client>
+            <driver>
+                <id>8</id>
+                <FirstName>Lukas</FirstName>
+                <Lastname>Zuvoskis</Lastname>
+                <Phone_Number>+37098765432</Phone_Number>
+                <License_Plate>T3236</License_Plate>
+            </driver>
+            <dispatch>
+                <id>7</id>
+                <FirstName>Domantas</FirstName>
+                <Lastname>Simkus</Lastname>
+                <Phone_Number>+37098765433</Phone_Number>
+                <Work_Number>+37098765431</Work_Number>
+            </dispatch>
+        </Order>
+        <Order id="13">
+            <address>Tuskulenu g 2</address>
+            <client>
+                <id>14</id>
+                <FirstName>Dovydas</FirstName>
+                <Lastname>Jonaitis</Lastname>
+                <Phone_Number>+37087654320</Phone_Number>
+            </client>
+            <driver>
+                <id>16</id>
+                <FirstName>Marius</FirstName>
+                <Lastname>Zuvoskis</Lastname>
+                <Phone_Number>+37012345680</Phone_Number>
+                <License_Plate>T3236</License_Plate>
+            </driver>
+            <dispatch>
+                <id>15</id>
+                <FirstName>Matas</FirstName>
+                <Lastname>Lapinaitis</Lastname>
+                <Phone_Number>+37098765433</Phone_Number>
+                <Work_Number>+37087654322</Work_Number>
+            </dispatch>
+        </Order>
+        <Order id="57">
+            <address>A.Kojalaviciaus 23</address>
+            <client>
+                <id>58</id>
+                <FirstName>Marius</FirstName>
+                <Lastname>Zuvoskis</Lastname>
+                <Phone_Number>+37087654320</Phone_Number>
+            </client>
+            <driver>
+                <id>60</id>
+                <FirstName>Domantas</FirstName>
+                <Lastname>Petrauskas</Lastname>
+                <Phone_Number>+37098765432</Phone_Number>
+                <License_Plate>T3236</License_Plate>
+            </driver>
+            <dispatch>
+                <id>59</id>
+                <FirstName>Vytautas</FirstName>
+                <Lastname>Vasiliauskas</Lastname>
+                <Phone_Number>+37087654322</Phone_Number>
+                <Work_Number>+37087654320</Work_Number>
+            </dispatch>
+        </Order>
+    </OrderList>
+</getDriverPlateOrdersResponse>

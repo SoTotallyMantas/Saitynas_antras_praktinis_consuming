@@ -8,10 +8,21 @@ import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 import org.springframework.ws.client.core.support.WebServiceGatewaySupport;
 import org.springframework.ws.soap.client.core.SoapActionCallback;
 
-
+/**
+ * Represents DriverClient Object that extends WebServiceGatewaySupport
+ * This class is designated to communicate with Driver WebService
+ */
 public class DriverClient extends WebServiceGatewaySupport {
 
+    /**
+     * Logger object that logs all the information
+     */
     private static final Logger log = LoggerFactory.getLogger(DriverClient.class);
+    /**
+     *  Method that gets the order by license plate of driver
+     * @param Plate License Plate of the order corresponding to driver
+     * @return GetDriverPlateOrdersResponse object
+     */
     public GetDriverPlateOrdersResponse getPlateOrder(String Plate) {
 
         GetDriverPlateOrdersRequest request = new GetDriverPlateOrdersRequest();
@@ -31,6 +42,12 @@ public class DriverClient extends WebServiceGatewaySupport {
 
         return response;
     }
+    /**
+     *  Method that gets the order by first name and last name of driver
+     * @param FirstName FirstName of the order corresponding to driver
+     * @param LastName LastName of the order corresponding to driver
+     * @return GetDriverOrdersResponse object
+     */
     public GetDriverOrdersResponse getOrder(String FirstName, String LastName) {
 
         GetDriverOrdersRequest request = new GetDriverOrdersRequest();
